@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #5c69ee, #4e55d1, 
+    #4041b5, #312e9a, #211c80, #211c80, #211c80, #211c80, 
+    #312e9a, #4041b5, #4e55d1, #5c69ee);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.link-cl {
+    position: absolute;
+    bottom: 0.3rem;
+    left: 0.3rem;
+    font-family: monospace;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: white;
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 1rem;
+    font-size: 0.8em;
+}
+.link-cl:hover {
+    background-color: dodgerblue;
+}
+
+.content-champions {
+    --zcl: 100vmin;
+    width: var(--zcl);
+    height: var(--zcl);
+    padding: calc(var(--zcl) / 25) 0;
+    
+}
+.content-estrelas {
+    --zs: calc(var(--zcl) / 2.2);
+    width: var(--zs);
+    height: var(--zs);
+    border-radius: 100%;
+    overflow: hidden;
+    margin: auto;
+}
+.estrelas {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    clip-path: polygon(61% 13.5%,
+            76% 17%,
+            79% 9%,
+            84% 21%,
+            100% 33%,
+            86.7% 31.5%,
+            87% 44%,
+            89% 57%,
+            99% 53%,
+            90% 67%,
+            91% 78%,
+            83% 73%,
+            70% 77%,
+            71% 87%,
+            84% 84%,
+            77% 99%,
+            48% 99%,
+            56% 92%,
+            51% 86.8%,
+            41% 88%,
+            42% 103%,
+            31% 87%,
+            14% 83%,
+            26% 79%,
+            22% 68%,
+            13% 63%,
+            5% 73%,
+            7% 57%,
+            0% 52.5%,
+            9.5% 49.5%,
+            14.5% 39%,
+            10% 33%,
+            3% 40%,
+            2% 20%,
+            20% 11%,
+            17% 20.5%,
+            24% 21%,
+            32% 12%,
+            29% 4%,
+            41.6% 6.5%,
+            65% -2%,
+            51.3% 9%,
+            62.5% 14%,
+            47% 15%,
+            41.5% 27%,
+            35% 17.5%,
+            24% 21%,
+            15% 28.8%,
+            14.5% 39%,
+            16% 48%,
+            27% 47%,
+            40% 41%,
+            41.6% 26%,
+            49.5% 37.9%,
+            66% 33%,
+            56% 47%,
+            66% 58.6%,
+            50% 56%,
+            42.5% 68%,
+            40% 52%,
+            27% 47%,
+            18% 57%,
+            22% 68%,
+            32.5% 75.5%,
+            42.5% 68%,
+            41% 80%,
+            51% 86.8%,
+            62% 87%,
+            70% 77%,
+            75% 68%,
+            66% 59%,
+            80% 59%,
+            87% 44%,
+            78% 32%,
+            65% 34%,
+            72% 24%,
+            61% 13.5%);
+    transform: scale(1.06);
+}
+.caixa-uefa {
+    --z-u: calc(var(--zcl) / 2.7);
+    width: var(--z-u);
+    height: calc(var(--z-u) / 2.2);
+    margin: auto;
+    margin-top: calc(var(--z-u) / 9);
+    position: relative;
+    overflow: hidden;
+    font-size: calc(var(--z-u) / 5);
+    font-family: arial, verdana, sans-serif;
+    font-weight: 900;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.caixa-uefa::before,
+.caixa-uefa::after {
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+    border: calc(var(--z-u) / 33) solid white;
+}
+.caixa-uefa::before {
+    width: calc(var(--z-u) * 1.6);
+    height: calc(var(--z-u) * 1.7);
+    left: -30%;
+    top: 0;
+}
+.caixa-uefa::after {
+    width: calc(var(--z-u) / 1.3);
+    height: calc(var(--z-u) / 1.5);
+    top: 63%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.vazio {
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    z-index: 20;
+}
+.vazio1 {
+    transform: rotate(-33deg);
+    left: -15%;
+    top: 40%;
+}
+.vazio2 {
+    transform: rotate(33deg);
+    right: -15%;
+    top: 40%;
+}
+.lu {
+    position: absolute;
+    color: white;
+    z-index: 10;
+    top: 0;
+    transform-origin: bottom;
+    height: 150%;
+}
+.lu>span {
+    display: block;
+}
+.u {
+    transform: rotate(-30deg);
+}
+
+.e {
+    transform: rotate(-10deg);
+}
+
+.f {
+    transform: rotate(10deg);
+}
+
+.a {
+    transform: rotate(30deg);
+}
+.caixa-c_l {
+    --ztc: calc(var(--zcl) / 10);
+    margin-top: calc(var(--ztc) / 7);
+    height: calc(var(--ztc) * 2.4);
+    line-height: 1;
+}
+.caixa-c_l>span {
+    display: block;
+    color: white;
+    text-align: center;
+    position: relative;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+}
+.champions {
+    font-size: calc(var(--ztc) * 1.25);
+    top: -7%;
+    letter-spacing: calc(var(--ztc) / 6);
+}
+.champions::first-letter {
+    font-size: calc(var(--ztc) * 1.4);
+}
+.league {
+    font-size: calc(var(--ztc) * 0.95);
+    top: 2%;
+    letter-spacing: calc(var(--ztc) / 8);
+    position: relative;
+}
+.league::first-letter {
+    font-size: var(--ztc);
+}
